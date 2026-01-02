@@ -28,10 +28,10 @@ Here are some example outputs generated with this workflow:
 
 ### Installation & Requirements
 
-Required Custom NodesInstall these via ComfyUI Manager or manually:
+Required Custom Nodes:
 
 *   Comfyui-FeedbackSampler: [https://github.com/QuorlenVerse/Comfyui-FeedbackSampler](https://github.com/QuorlenVerse/Comfyui-FeedbackSampler?referrer=grok.com) – Core feedback sampling functionality which adds ability to rotate and pan.
-    (This is a forked version, creddit to orrigional creator https://github.com/pizurny/Comfyui-FeedbackSampler )
+    (requires manual install, alternatively use orrigional from pizurny but will not have rotate or pan ability.), (This is a forked version, creddit to orrigional creator https://github.com/pizurny/Comfyui-FeedbackSampler),
     
 *   ComfyUI\_Fill-Nodes: [https://github.com/filliptm/ComfyUI\_Fill-Nodes](https://github.com/filliptm/ComfyUI_Fill-Nodes?referrer=grok.com) – Utility nodes for batching images, RIFE model loading.
     
@@ -57,6 +57,7 @@ Optional Custom Node (for GIF output)
 
 
 Notes are included directly in the workflow JSON for more details.
+
 
 
 
