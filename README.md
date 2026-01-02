@@ -55,3 +55,6 @@ Optional Custom Node (for GIF output)
 
 
 Notes are included directly in the workflow JSON for more details.
+
+
+!(Examples/Workflow_Screenshot.png)
