@@ -5,74 +5,6 @@
   "last_link_id": 334,
   "nodes": [
     {
-      "id": 48,
-      "type": "0f47377a-2933-4dba-9791-a9c54b078226",
-      "pos": [
-        14693.392115723367,
-        1528.3281762269355
-      ],
-      "size": [
-        467.08333333333337,
-        221.66666666666669
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            147
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            148
-          ]
-        },
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            150
-          ]
-        }
-      ],
-      "properties": {
-        "proxyWidgets": [
-          [
-            "12",
-            "unet_name"
-          ],
-          [
-            "9",
-            "vae_name"
-          ],
-          [
-            "10",
-            "clip_name"
-          ],
-          [
-            "20",
-            "lora_name"
-          ],
-          [
-            "26",
-            "lora_name"
-          ]
-        ]
-      },
-      "widgets_values": [],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 66,
       "type": "PrimitiveStringMultiline",
       "pos": [
@@ -86,7 +18,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -122,7 +54,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -158,7 +90,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -194,7 +126,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -215,97 +147,6 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 87,
-      "type": "b190b1d6-9b7e-499d-9d81-105ed0c3761d",
-      "pos": [
-        15593.107290045165,
-        1527.6585385214705
-      ],
-      "size": [
-        626.7192616906686,
-        220
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 183
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 185
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 184
-        },
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": 314
-        },
-        {
-          "name": "feedback_denoise",
-          "type": "FLOAT",
-          "widget": {
-            "name": "feedback_denoise"
-          },
-          "link": 327
-        },
-        {
-          "name": "rotation_value",
-          "type": "FLOAT",
-          "widget": {
-            "name": "rotation_value"
-          },
-          "link": 334
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            305,
-            319
-          ]
-        }
-      ],
-      "properties": {
-        "proxyWidgets": [
-          [
-            "-1",
-            "feedback_denoise"
-          ],
-          [
-            "-1",
-            "rotation_value"
-          ],
-          [
-            "86",
-            "text"
-          ],
-          [
-            "84",
-            "seed"
-          ]
-        ]
-      },
-      "widgets_values": [
-        0.4,
-        0
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     },
     {
       "id": 90,
@@ -685,81 +526,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 82,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        16504.7873587726,
-        1526.3821489790332
-      ],
-      "size": [
-        221.59184888794698,
-        453.591848887947
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 18,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 272
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 24,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "image/gif",
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "AnimateDiff_00001.gif",
-            "subfolder": "",
-            "type": "output",
-            "format": "image/gif",
-            "frame_rate": 24,
-            "workflow": "AnimateDiff_00001.png",
-            "fullpath": "D:\\ComfyUI_windows_portable_nvidia_cu128\\ComfyUI_windows_portable\\ComfyUI\\output\\AnimateDiff_00001.gif"
-          }
-        }
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 131,
       "type": "SaveVideo",
       "pos": [
@@ -893,7 +659,7 @@
         58
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -930,7 +696,7 @@
         58
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -969,7 +735,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1026,7 +792,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1034,32 +800,6 @@
       "properties": {},
       "widgets_values": [
         "### Video Combine node from custom node pack:\n\nhttps://github.com/Kosinkadink/ComfyUI-VideoHelperSuite\n\nThis is an optional node only required if you wish to save output as gif format.\n\nIf you have no need for .gif format, leave muted or delete."
-      ],
-      "color": "#432",
-      "bgcolor": "#000"
-    },
-    {
-      "id": 75,
-      "type": "MarkdownNote",
-      "pos": [
-        14211.860958397518,
-        1522.541734265089
-      ],
-      "size": [
-        474.35432115909134,
-        985.7866924741666
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Workflow Requirements",
-      "properties": {},
-      "widgets_values": [
-        "## Required Custom nodes\n\n- Comfyui-FeedbackSampler: https://github.com/QuorlenVerse/Comfyui-FeedbackSampler\n- ComfyUI_Fill-Nodes: https://github.com/filliptm/ComfyUI_Fill-Nodes\n\n## Model links\n\n**text_encoders**\n\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n**loras**\n\n- [Qwen-Edit-2509-Multiple-angles.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/loras/Qwen-Edit-2509-Multiple-angles.safetensors)\n- [Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors](https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors)\n\n**diffusion_models**\n\n- [qwen_image_edit_2509_fp8_e4m3fn.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors)\n\n**vae**\n\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 text_encoders/\n│   │      └── qwen_2.5_vl_7b_fp8_scaled.safetensors\n│   ├── 📂 loras/\n│   │      ├── Qwen-Edit-2509-Multiple-angles.safetensors\n│   │      └── Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors\n│   ├── 📂 diffusion_models/\n│   │      └── qwen_image_edit_2509_fp8_e4m3fn.safetensors\n│   └── 📂 vae/\n│          └── qwen_image_vae.safetensors\n```\n\n## Model links\n\n**text_encoders**\n\n- [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n\n**diffusion_models**\n\n- [z_image_turbo_bf16.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors)\n\n**vae**\n\n- [ae.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors)\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 text_encoders/\n│   │      └── qwen_3_4b.safetensors\n│   ├── 📂 diffusion_models/\n│   │      └── z_image_turbo_bf16.safetensors\n│   └── 📂 vae/\n│          └── ae.safetensors\n```\n"
       ],
       "color": "#432",
       "bgcolor": "#000"
@@ -1076,7 +816,7 @@
         146
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1273,6 +1013,266 @@
         "",
         ""
       ]
+    },
+    {
+      "id": 75,
+      "type": "MarkdownNote",
+      "pos": [
+        14211.860958397518,
+        1522.541734265089
+      ],
+      "size": [
+        474.35432115909134,
+        985.7866924741666
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Workflow Requirements",
+      "properties": {},
+      "widgets_values": [
+        "## Required Custom nodes\n\n- Comfyui-FeedbackSampler: https://github.com/QuorlenVerse/Comfyui-FeedbackSampler\n- ComfyUI_Fill-Nodes: https://github.com/filliptm/ComfyUI_Fill-Nodes\n\n## Model links\n\n**text_encoders**\n\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n**loras**\n\n- [Qwen-Edit-2509-Multiple-angles.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/loras/Qwen-Edit-2509-Multiple-angles.safetensors)\n- [Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors](https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors)\n\n**diffusion_models**\n\n- [qwen_image_edit_2509_fp8_e4m3fn.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors)\n\n**vae**\n\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 text_encoders/\n│   │      └── qwen_2.5_vl_7b_fp8_scaled.safetensors\n│   ├── 📂 loras/\n│   │      ├── Qwen-Edit-2509-Multiple-angles.safetensors\n│   │      └── Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors\n│   ├── 📂 diffusion_models/\n│   │      └── qwen_image_edit_2509_fp8_e4m3fn.safetensors\n│   └── 📂 vae/\n│          └── qwen_image_vae.safetensors\n```\n\n## Model links\n\n**text_encoders**\n\n- [qwen_3_4b.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors)\n\n**diffusion_models**\n\n- [z_image_turbo_bf16.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors)\n\n**vae**\n\n- [ae.safetensors](https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors)\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 text_encoders/\n│   │      └── qwen_3_4b.safetensors\n│   ├── 📂 diffusion_models/\n│   │      └── z_image_turbo_bf16.safetensors\n│   └── 📂 vae/\n│          └── ae.safetensors\n```\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 82,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        16504.7873587726,
+        1526.3821489790332
+      ],
+      "size": [
+        221.59184888794698,
+        94
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 272
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "image/gif",
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00001.gif",
+            "subfolder": "",
+            "type": "output",
+            "format": "image/gif",
+            "frame_rate": 24,
+            "workflow": "AnimateDiff_00001.png",
+            "fullpath": "D:\\ComfyUI_windows_portable_nvidia_cu128\\ComfyUI_windows_portable\\ComfyUI\\output\\AnimateDiff_00001.gif"
+          }
+        }
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 48,
+      "type": "0f47377a-2933-4dba-9791-a9c54b078226",
+      "pos": [
+        14693.392115723367,
+        1528.3281762269355
+      ],
+      "size": [
+        467.08333333333337,
+        221.66666666666669
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            147
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            148
+          ]
+        },
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            150
+          ]
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [
+          [
+            "12",
+            "unet_name"
+          ],
+          [
+            "9",
+            "vae_name"
+          ],
+          [
+            "10",
+            "clip_name"
+          ],
+          [
+            "20",
+            "lora_name"
+          ],
+          [
+            "26",
+            "lora_name"
+          ]
+        ]
+      },
+      "widgets_values": [],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 87,
+      "type": "b190b1d6-9b7e-499d-9d81-105ed0c3761d",
+      "pos": [
+        15593.107290045165,
+        1527.6585385214705
+      ],
+      "size": [
+        626.7192616906686,
+        220
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 183
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 185
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 184
+        },
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 314
+        },
+        {
+          "name": "feedback_denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "feedback_denoise"
+          },
+          "link": 327
+        },
+        {
+          "name": "rotation_value",
+          "type": "FLOAT",
+          "widget": {
+            "name": "rotation_value"
+          },
+          "link": 334
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            305,
+            319
+          ]
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [
+          [
+            "-1",
+            "feedback_denoise"
+          ],
+          [
+            "-1",
+            "rotation_value"
+          ],
+          [
+            "86",
+            "text"
+          ],
+          [
+            "84",
+            "seed"
+          ]
+        ]
+      },
+      "widgets_values": [
+        0.4,
+        0
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -5201,7 +5201,7 @@
               }
             },
             "widgets_values": [
-              "regular use\\Qwen-Edit-2509-Multiple-angles.safetensors",
+              "Qwen-Edit-2509-Multiple-angles.safetensors",
               1
             ]
           },
@@ -5265,7 +5265,7 @@
               }
             },
             "widgets_values": [
-              "regular use\\Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors",
+              "Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors",
               1
             ]
           }
@@ -11717,10 +11717,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6143224552697439,
+      "scale": 0.6757547007967191,
       "offset": [
-        -14320.7528480161,
-        -1303.3563650399778
+        -14394.064503643707,
+        -1272.8022942890232
       ]
     },
     "frontendVersion": "1.35.9",
