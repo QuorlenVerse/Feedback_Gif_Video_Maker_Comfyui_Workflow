@@ -1,6 +1,8 @@
 # Feedback\_Gif\_Video\_Maker\_V1.0
 
 A ComfyUI workflow designed for creating animated GIFs and videos using iterative feedback sampling techniques. This workflow leverages advanced image editing models to generate dynamic, evolving animations from text prompts or initial images.
+
+![Workflow Screenshot](Examples/Workflow_Screenshot.png)
     
 ## Examples
 
@@ -56,6 +58,4 @@ Optional Custom Node (for GIF output)
 
 Notes are included directly in the workflow JSON for more details.
 
-
-![Workflow Screenshot](Examples/Workflow_Screenshot.png)
 
