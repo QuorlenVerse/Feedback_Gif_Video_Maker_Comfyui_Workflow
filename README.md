@@ -6,13 +6,9 @@ A ComfyUI workflow designed for creating animated GIFs and videos using iterativ
 
 Here are some example outputs generated with this workflow:
 
-![Elaphant Elegance](examples/Elaphant_Elagance.gif)
+![Elaphant Elegance](Examples/Elaphant_Elagance.gif)
 
-![Horseman of Many Forms](examples/horseman_of_many_Forms.gif)
-
-![Pelicans Greed](examples/Pelicans_greed.gif)
-
-![Zombie](examples/zombie.gif)
+![Horseman of Many Forms](Examples/horseman_of_many_Forms.gif)
 
 
 ### Features
@@ -56,5 +52,6 @@ Optional Custom Node (for GIF output)
     
 5.  Use the Video Combine node (if installed) to export as GIF or default save video for mp4.
     
+
 
 Notes are included directly in the workflow JSON for more details.
